@@ -1,0 +1,30 @@
+body {
+    padding-top: 50px;
+    background-color: #eee;
+}
+
+.desc {
+    color: #999;
+    font-size: 12px;
+}
+
+.index-box{
+    margin-bottom: 100px;
+}
+
+.index-pic {
+    position: relative;
+    background: url("../../resources/pic/hero.jpg") center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 12% 0;
+}
+
+.index-pic .poem {
+    height: 250px;
+    font-size: 40px;
+}
+
+.index-pic .center-padding {
+    height: 40px;
+}
