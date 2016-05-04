@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../style/my/common.css">
 </head>
 <body ng-controller="indexCtrl">
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -35,6 +36,7 @@
         </div><!--/.nav-collapse -->
     </div>
 </nav>
+
 <div class="index-box index-pic">
     <div class="container poem">
         <p>日日深杯酒满，朝朝小圃花开</p>
@@ -44,25 +46,56 @@
         <p>不须计较与安排，领取而今现在</p>
     </div>
 </div>
+
 <div class="container index-box">
-    <div class="row">
-        <div class="col-md-4">
-            <i class="fa fa-file-code-o  fa-2x" aria-hidden="true"></i>
-            <p>最新分享</p>
-            <p>我的个人博客总共展示了三个版本，界面也经历了由“简单”到“复杂”再到“简单”，颜色从“色泽单一”到“五彩斑斓”再到“局部点缀”的过程。原来一年一个版本！而每次改版的契机都是被百度惩罚！界面不要频繁更换！好好检查代码，有没有冗余、结构有没有不合理的地方。</p>
+    <div class="row grid">
+        <div class="col-md-4 grid-box">
+            <div class="grid-box-item">
+                <i class="fa fa-file-code-o  fa-2x" aria-hidden="true"></i>
+                <p>最新分享</p>
+                <p>
+                    我的个人博客总共展示了三个版本，界面也经历了由“简单”到“复杂”再到“简单”，颜色从“色泽单一”到“五彩斑斓”再到“局部点缀”
+                    的过程。原来一年一个版本！而每次改版的契机都是被百度惩罚！界面不要频繁更换！好好检查代码，有没有冗余、结构有没有不合
+                    理的地方。
+                </p>
+            </div>
+            <div class="grid-box-item">
+                <button type="button" class="btn btn-info width-full">更多分享</button>
+            </div>
         </div>
-        <div class="col-md-4">
-            <i class="fa fa-venus-mars  fa-2x" aria-hidden="true"></i>
-            <p>最新杂文</p>
-            <p>我的个人博客总共展示了三个版本，界面也经历了由“简单”到“复杂”再到“简单”，颜色从“色泽单一”到“五彩斑斓”再到“局部点缀”的过程。原来一年一个版本！而每次改版的契机都是被百度惩罚！界面不要频繁更换！好好检查代码，有没有冗余、结构有没有不合理的地方。</p>
+        <div class="col-md-4 grid-box">
+            <div class="grid-box-item">
+                <i class="fa fa-venus-mars  fa-2x" aria-hidden="true"></i>
+                <p>最新杂文</p>
+                <p>我的个人博客总共展示了三个版本，界面也经历了由“简单”到“复杂”再到“简单”.</p>
+            </div>
+            <div class="grid-box-item">
+                <button type="button" class="btn btn-info width-full">更多杂文</button>
+            </div>
         </div>
-        <div class="col-md-4">
-            <i class="fa fa-camera-retro  fa-2x" aria-hidden="true"></i>
-            <p>最新动态</p>
-            <p>我的个人博客总共展示了三个版本，界面也经历了由“简单”到“复杂”再到“简单”，颜色从“色泽单一”到“五彩斑斓”再到“局部点缀”的过程。原来一年一个版本！而每次改版的契机都是被百度惩罚！界面不要频繁更换！好好检查代码，有没有冗余、结构有没有不合理的地方。</p>
+        <div class="col-md-4 grid-box">
+            <div class="grid-box-item">
+                <i class="fa fa-camera-retro  fa-2x" aria-hidden="true"></i>
+                <p>最新动态</p>
+                <p>
+                    我的个人博客总共展示了三个版本，界面也经历了由“简单”到“复杂”再到“简单”，颜色从“色泽单一”到“五彩斑斓”再到“局部点缀”
+                    的过程。原来一年一个版本！而每次改版的契机都是被百度惩罚！界面不要频繁更换！好好检查代码，有没有冗余、结构有没有不合
+                    理的地方。
+                </p>
+            </div>
+            <div class="grid-box-item">
+                <button type="button" class="btn btn-info width-full">更多动态</button>
+            </div>
         </div>
     </div>
 </div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+    </div>
+</footer>
+
 </body>
 <script src="../js/lib/jquery.min.js"></script>
 <script src="../js/lib/angular.min.js"></script>
