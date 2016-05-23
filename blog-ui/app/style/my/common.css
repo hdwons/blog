@@ -8,8 +8,13 @@ body {
     font-size: 12px;
 }
 
-.index-box{
+.data-box{
     margin-bottom: 100px;
+}
+
+.data-box-item{
+    border: 1px solid #EEEEEE;
+    background-color: #FFF;
 }
 
 .index-pic {
@@ -27,29 +32,6 @@ body {
 
 .index-pic .center-padding {
     height: 40px;
-}
-
-.grid{
-    display: flex;
-    flex-direction: row;
-}
-
-.grid-box{
-    display: flex;
-    flex-direction: column;
-    background-color: #FFF;
-    padding: 20px 80px 20px 80px;
-    border: 1px solid #eee;
-    border-width: 0 1px 1px 0;
-    -webkit-box-pack: justify;
-    -moz-box-pack:justify;
-    justify-content: space-between;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-}
-
-.grid-box-item{
-    width: 100%;
 }
 
 .width-full{
