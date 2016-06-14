@@ -9,11 +9,11 @@ public class Article {
 	private int id;
 	private String title;
 	private int authorId;
-	private String desc;
+	private String description;
 	private String content;
 	private Date gmtCreate;
 	private Date gmtModify;
-	private int likePoint;
+	private int heat;
 
 	public int getId () {
 		return id;
@@ -39,12 +39,12 @@ public class Article {
 		this.authorId = authorId;
 	}
 
-	public String getDesc () {
-		return desc;
+	public String getDescription () {
+		return description;
 	}
 
-	public void setDesc (String desc) {
-		this.desc = desc;
+	public void setDescription (String description) {
+		this.description = description;
 	}
 
 	public String getContent () {
@@ -71,11 +71,25 @@ public class Article {
 		this.gmtModify = gmtModify;
 	}
 
-	public int getLikePoint () {
-		return likePoint;
+	public int getHeat () {
+		return heat;
 	}
 
-	public void setLikePoint (int likePoint) {
-		this.likePoint = likePoint;
+	public void setHeat (int heat) {
+		this.heat = heat;
+	}
+
+	@Override
+	public String toString () {
+		return "Article{" +
+				"id=" + id +
+				", title='" + title + '\'' +
+				", authorId=" + authorId +
+				", description='" + description + '\'' +
+				", content='" + content + '\'' +
+				", gmtCreate=" + gmtCreate +
+				", gmtModify=" + gmtModify +
+				", heat=" + heat +
+				'}';
 	}
 }

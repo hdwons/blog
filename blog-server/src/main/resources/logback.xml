@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.hdzy.blog" level="WARN"/>
+
+    <logger name="java.sql" level="WARN"/>
+
+    <!-- root -->
+    <root level="ERROR">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <root level="WARN">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>

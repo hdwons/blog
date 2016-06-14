@@ -1,6 +1,8 @@
 package com.hdzy.blog.domain.repository;
 
 import com.hdzy.blog.domain.model.Article;
+import com.hdzy.blog.domain.model.enums.OrderField;
+import com.hdzy.blog.domain.model.enums.OrderRule;
 
 import java.util.List;
 
@@ -9,7 +11,7 @@ import java.util.List;
  */
 public interface ArticleRepository {
 
-	List<Article> loadArticlesMetaByCreateTimeDesc(int count);
+	List<Article> loadArticlesMeta (int count, OrderField orderField, OrderRule orderRule);
 
-	List<Article> loadArticlesMetaByHeatDesc(int count);
+	Article loadArticleById (int id);
 }

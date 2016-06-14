@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hdzy.blog.common.dao.ArticleDao">
+
+    <resultMap id="ArticleResultMap" type="Article">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="authorId" column="author_id"/>
+        <result property="description" column="description"/>
+        <result property="content" column="content"/>
+        <result property="gmtCreate" column="gmt_create"/>
+        <result property="gmtModify" column="gmt_modify"/>
+        <result property="heat" column="heat"/>
+    </resultMap>
+
+    <select id="selectArticlesMeta" resultMap="ArticleResultMap">
+        select id, title, author_id, description, gmt_create, gmt_modify, heat from article order by
+        ${orderField.fieldName} ${orderRule} limit #{count}
+    </select>
+
+    <select id="selectArticleById" resultType="Article">
+        select id, title, author_id, description, content, gmt_create, gmt_modify, heat from article where id = #{id}
+    </select>
+
+</mapper>

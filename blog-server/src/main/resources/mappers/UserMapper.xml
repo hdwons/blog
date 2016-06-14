@@ -3,7 +3,7 @@
 
 <mapper namespace="com.hdzy.blog.common.dao.UserDao">
 
-    <select id="findUserById" resultType="com.hdzy.blog.domain.model.User">
+    <select id="findUserById" resultType="User">
         select id,name,email,photo,role from user where id=#{id}
     </select>
 
