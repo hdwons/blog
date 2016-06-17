@@ -1,0 +1,19 @@
+.gallery-box {
+    margin-top: 3rem;
+}
+
+.gallery-item {
+    background-color: #000;
+    overflow: hidden;
+    width: 100%;
+    height: 20vw;
+    cursor: pointer;
+}
+
+.gallery-item img{
+    width: 100%;
+}
+
+.gallery-item .info{
+    padding-left: 2rem;
+}

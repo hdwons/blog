@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="blogAPP">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>十四尧</title>
+    <link rel="stylesheet" href="../style/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/my/common.css">
+    <link rel="stylesheet" href="../style/my/gallery.css">
+</head>
+<body ng-controller="indexCtrl">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">十四尧<span class="desc"> | 平而不凡的一对儿</span></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="articles.html">码农生活</a></li>
+                <li><a href="#">碎语闲言</a></li>
+                <li class="active"><a href="gallery.html">瞬间永恒</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">留言板</a></li>
+                <li><a href="#">登录</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="blogbody">
+    <div class="container gallery-box">
+        <div class="row">
+            <div class="col-sm-4 padding-top-bottom">
+                <div class="gallery-item">
+                    <img src="http://www.17sucai.com/preview/47509/2013-10-15/zoom-info/images/image01.jpg">
+                    <div class="info">
+                        <h2>Lady Gaga</h2>
+                        <p>Lady Gaga is an American recording artist who rose to fame with her first two singles "Just
+                            Dance" and "Poker Face".</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 padding-top-bottom">
+                <div class="gallery-item">
+                    <img src="http://www.17sucai.com/preview/47509/2013-10-15/zoom-info/images/image02.jpg">
+                    <div class="info">
+                        <h2>Lady Gaga</h2>
+                        <p>Lady Gaga is an American recording artist who rose to fame with her first two singles "Just
+                            Dance" and "Poker Face".</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 padding-top-bottom">
+                <div class="gallery-item">
+                    <img src="http://www.17sucai.com/preview/47509/2013-10-15/zoom-info/images/image03.jpg">
+                    <div class="info">
+                        <h2>Lady Gaga</h2>
+                        <p>Lady Gaga is an American recording artist who rose to fame with her first two singles "Just
+                            Dance" and "Poker Face".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 padding-top-bottom">
+                <div class="gallery-item">
+                    <img src="http://www.17sucai.com/preview/47509/2013-10-15/zoom-info/images/image04.jpg">
+                    <div class="info">
+                        <h2>Lady Gaga</h2>
+                        <p>Lady Gaga is an American recording artist who rose to fame with her first two singles "Just
+                            Dance" and "Poker Face".</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 padding-top-bottom">
+                <div class="gallery-item">
+                    <img src="http://www.17sucai.com/preview/47509/2013-10-15/zoom-info/images/image05.jpg">
+                    <div class="info">
+                        <h2>Lady Gaga</h2>
+                        <p>Lady Gaga is an American recording artist who rose to fame with her first two singles "Just
+                            Dance" and "Poker Face".</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 padding-top-bottom">
+                <div class="gallery-item">
+                    <img src="http://www.17sucai.com/preview/47509/2013-10-15/zoom-info/images/image06.jpg">
+                    <div class="info">
+                        <h2>Lady Gaga</h2>
+                        <p>Lady Gaga is an American recording artist who rose to fame with her first two singles "Just
+                            Dance" and "Poker Face".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="text-muted text-center">Design and Achieve by 十四尧</div>
+    </div>
+</footer>
+</body>
+<script src="../js/lib/jquery.min.js"></script>
+<script src="../js/lib/angular.min.js"></script>
+<script src="../js/lib/bootstrap.min.js"></script>
+<script src="../js/my/app/app.js"></script>
+<script src="../js/my/controller/index/index.js"></script>
+<script>
+    $(function () {
+        $('.gallery-item').hover(function () {
+            $(this).find('img').stop().animate({width: "40%", marginTop: "1rem", marginLeft: "1rem"}, 500);
+        }, function () {
+            $(this).find('img').stop().animate({width: "100%", marginTop: 0, marginLeft: 0}, 300);
+        });
+    });
+</script>
+</html>

@@ -62,6 +62,17 @@ body {
     width: 100%;
 }
 
+.padding-top-bottom{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.blogbody{
+    min-height: 90vh;
+}
+
 .footer {
+    height: 3rem;
+    line-height: 3rem;
     background-color: #FFF;
 }
