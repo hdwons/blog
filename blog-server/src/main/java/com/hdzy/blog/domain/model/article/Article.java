@@ -1,6 +1,7 @@
 package com.hdzy.blog.domain.model.article;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,7 +13,7 @@ public class Article {
 	private String description;
 	private String content;
 	private Menu menu;
-	private List<Label> labels;
+	private List<Label> labels = new ArrayList<>();
 	private LocalDateTime gmtCreate;
 	private LocalDateTime gmtModify;
 	private int heat;

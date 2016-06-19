@@ -11,24 +11,24 @@ import static org.junit.Assert.*;
 /**
  * Created by donghe on 16/6/7.
  */
-public class ArticleFacadeTest {
+public class ArticleListFacadeTest {
 
-	private ArticleFacade articleFacade;
+	private ArticleListFacade articleListFacade;
 
 	@Before
 	public void setUp () throws Exception {
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-		articleFacade = (ArticleFacade) context.getBean("articleFacade");
+		articleListFacade = (ArticleListFacade) context.getBean("articleListFacade");
 	}
 
 	@Test
 	public void getNewestArticles () throws Exception {
-		System.out.println(articleFacade.getNewestArticles());
+		System.out.println(articleListFacade.getNewestArticles());
 	}
 
 	@Test
 	public void getHotestArticles () throws Exception {
-		System.out.println(articleFacade.getHotestArticles());
+		System.out.println(articleListFacade.getHotestArticles());
 	}
 
 }
