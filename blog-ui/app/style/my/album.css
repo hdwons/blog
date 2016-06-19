@@ -1,8 +1,8 @@
-.gallery-box {
+.album-box {
     margin-top: 3rem;
 }
 
-.gallery-item {
+.album-item {
     background-color: #000;
     overflow: hidden;
     width: 100%;
@@ -10,10 +10,10 @@
     cursor: pointer;
 }
 
-.gallery-item img{
+.album-item img{
     width: 100%;
 }
 
-.gallery-item .info{
+.album-item .info{
     padding-left: 2rem;
 }

@@ -1,12 +1,14 @@
-package com.hdzy.blog.domain.model;
+package com.hdzy.blog.domain.model.comment;
+
+import com.hdzy.blog.domain.model.user.User;
 
 /**
  * Created by donghe on 16/6/5.
  */
 public class Comment {
 	private int id;
-	private int articleId;
-	private int reviewerId;
+	private int targetId;
+	private User commenter;
 	private String content;
 	private int likePoint;
 
@@ -18,20 +20,20 @@ public class Comment {
 		this.id = id;
 	}
 
-	public int getArticleId () {
-		return articleId;
+	public int getTargetId () {
+		return targetId;
 	}
 
-	public void setArticleId (int articleId) {
-		this.articleId = articleId;
+	public void setTargetId (int targetId) {
+		this.targetId = targetId;
 	}
 
-	public int getReviewerId () {
-		return reviewerId;
+	public User getCommenter () {
+		return commenter;
 	}
 
-	public void setReviewerId (int reviewerId) {
-		this.reviewerId = reviewerId;
+	public void setCommenter (User commenter) {
+		this.commenter = commenter;
 	}
 
 	public String getContent () {

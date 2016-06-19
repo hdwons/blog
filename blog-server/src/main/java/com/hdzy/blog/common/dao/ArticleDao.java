@@ -1,6 +1,6 @@
 package com.hdzy.blog.common.dao;
 
-import com.hdzy.blog.domain.model.Article;
+import com.hdzy.blog.domain.model.article.Article;
 import com.hdzy.blog.domain.model.enums.OrderField;
 import com.hdzy.blog.domain.model.enums.OrderRule;
 import org.apache.ibatis.annotations.Param;

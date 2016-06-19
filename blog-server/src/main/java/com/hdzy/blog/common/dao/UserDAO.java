@@ -1,6 +1,6 @@
 package com.hdzy.blog.common.dao;
 
-import com.hdzy.blog.domain.model.User;
+import com.hdzy.blog.domain.model.user.User;
 
 /**
  * Created by donghe on 16/6/5.

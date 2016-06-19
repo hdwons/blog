@@ -1,6 +1,6 @@
 package com.hdzy.blog.domain.service.impl;
 
-import com.hdzy.blog.domain.model.Article;
+import com.hdzy.blog.domain.model.article.Article;
 import com.hdzy.blog.domain.model.enums.OrderField;
 import com.hdzy.blog.domain.model.enums.OrderRule;
 import com.hdzy.blog.domain.repository.ArticleRepository;

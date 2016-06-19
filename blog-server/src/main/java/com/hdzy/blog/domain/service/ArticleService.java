@@ -1,6 +1,6 @@
 package com.hdzy.blog.domain.service;
 
-import com.hdzy.blog.domain.model.Article;
+import com.hdzy.blog.domain.model.article.Article;
 
 import java.util.List;
 

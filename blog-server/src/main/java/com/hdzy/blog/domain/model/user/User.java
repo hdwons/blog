@@ -1,4 +1,4 @@
-package com.hdzy.blog.domain.model;
+package com.hdzy.blog.domain.model.user;
 
 import com.hdzy.blog.domain.model.enums.Role;
 

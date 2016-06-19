@@ -1,6 +1,7 @@
-package com.hdzy.blog.domain.model;
+package com.hdzy.blog.domain.model.article;
 
-import java.util.Date;
+import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * Created by donghe on 16/6/3.
@@ -8,11 +9,12 @@ import java.util.Date;
 public class Article {
 	private int id;
 	private String title;
-	private int authorId;
 	private String description;
 	private String content;
-	private Date gmtCreate;
-	private Date gmtModify;
+	private Menu menu;
+	private List<Label> labels;
+	private LocalDateTime gmtCreate;
+	private LocalDateTime gmtModify;
 	private int heat;
 
 	public int getId () {
@@ -31,14 +33,6 @@ public class Article {
 		this.title = title;
 	}
 
-	public int getAuthorId () {
-		return authorId;
-	}
-
-	public void setAuthorId (int authorId) {
-		this.authorId = authorId;
-	}
-
 	public String getDescription () {
 		return description;
 	}
@@ -55,19 +49,19 @@ public class Article {
 		this.content = content;
 	}
 
-	public Date getGmtCreate () {
+	public LocalDateTime getGmtCreate () {
 		return gmtCreate;
 	}
 
-	public void setGmtCreate (Date gmtCreate) {
+	public void setGmtCreate (LocalDateTime gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
 
-	public Date getGmtModify () {
+	public LocalDateTime getGmtModify () {
 		return gmtModify;
 	}
 
-	public void setGmtModify (Date gmtModify) {
+	public void setGmtModify (LocalDateTime gmtModify) {
 		this.gmtModify = gmtModify;
 	}
 
@@ -79,14 +73,31 @@ public class Article {
 		this.heat = heat;
 	}
 
+	public Menu getMenu () {
+		return menu;
+	}
+
+	public void setMenu (Menu menu) {
+		this.menu = menu;
+	}
+
+	public List<Label> getLabels () {
+		return labels;
+	}
+
+	public void setLabels (List<Label> labels) {
+		this.labels = labels;
+	}
+
 	@Override
 	public String toString () {
 		return "Article{" +
 				"id=" + id +
 				", title='" + title + '\'' +
-				", authorId=" + authorId +
 				", description='" + description + '\'' +
 				", content='" + content + '\'' +
+				", menu=" + menu +
+				", labels=" + labels +
 				", gmtCreate=" + gmtCreate +
 				", gmtModify=" + gmtModify +
 				", heat=" + heat +
