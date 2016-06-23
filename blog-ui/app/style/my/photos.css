@@ -1,0 +1,26 @@
+.photos-title{
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    font-size: xx-large;
+    color: #555;
+}
+
+.photos-title-desc{
+    border-bottom: 1px #CCC dashed;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: medium;
+    color: #999;
+}
+
+.photo{
+    width: 100%;
+    cursor: pointer;
+}
+
+.photo-desc{
+    background-color: #FFF;
+    padding: 1rem;
+}
