@@ -1,0 +1,44 @@
+.article-header{
+    width: 100%;
+    height: 20vw;
+    margin-bottom: 2vw;
+}
+
+.article-header img{
+    width: 100%;
+    height: 100%;
+}
+
+.article-content{
+    margin-bottom: 2vw;
+}
+
+.vote span{
+    display: block;
+    font-size: larger;
+}
+
+.vote-up, .vote-down{
+    cursor: pointer;
+}
+
+.article-list-box{
+    padding-left: 2rem;
+    border-left: 1px solid #CCC;
+}
+
+.article-list-item{
+    border-bottom: 1px dotted #CCC;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+a.article-list-item-title, a.article-list-item-author{
+    color: #005a94;
+}
+
+.article-list-item-pic{
+    height: 5rem;
+    padding-right: 0px;
+    margin-bottom: 0.5rem;
+}
